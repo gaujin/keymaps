@@ -24,11 +24,11 @@ Alt       |               |      |      |      |      | PgUp |      |      |    
 Shift     |               |   Z  |   X  |   C  |   V  |   B  |   N  |   M  |   <  |   >  |   ?  |           |      |
           |  LShift       |   z  |   x  |   c  |   v  |   b  |   n  |   m  |   ,  |   .  |   /  |   RShift  |  Fn  |
           `---------------^------^------^------^------^------^------^------^------^------^------^-----------^------'
-Alt+Shift           |      |          |                                         |          |      |
-Alt                 |      |          |                                         |          |      |
-Shift               |      |          |                                         |          |      |
-                    | LAlt |LANG1/LGui|                  Space                  |LANG2/RGui| RAlt |
-                    `------^----------^-----------------------------------------^----------^------'
+Alt+Shift            |      |         |                                         |         |      |
+Alt                  |      |         |                                         |         |      |
+Shift                |      |         |           Toggle Input Source           |         |      |
+                     | LAlt |   LGui  |                  Space                  |   RGui  | RAlt |
+                     `------^---------^-----------------------------------------^---------^------'
 SW1:OFF
 SW2:ON
 SW3:ON
@@ -125,8 +125,8 @@ SW6:ON
         LASFT(KC_0): KC_RCBR,  # }
         LALT(KC_0): KC_RBRC,  # ]
 
-        RASFT(KC_F): LSFT(KC_PGUP),
-        RALT(KC_F): KC_PGUP,
+        RASFT(KC_F): LSFT(KC_PGDN),
+        RALT(KC_F): KC_PGDN,
         LASFT(KC_H): LSFT(KC_LEFT),
         LALT(KC_H): KC_LEFT,
         LASFT(KC_J): LSFT(KC_DOWN),
@@ -141,10 +141,9 @@ SW6:ON
         KC_SCLN: KC_COLN,
         KC_COLN: KC_SCLN,
 
-        RASFT(KC_B): LSFT(KC_PGDN),
-        RALT(KC_B): KC_PGDN,
+        RASFT(KC_B): LSFT(KC_PGUP),
+        RALT(KC_B): KC_PGUP,
 
-        KC_LGUI: KC_LANG1,
-        KC_RGUI: KC_LANG2,
+        SFT(KC_SPC): KC_LANG1,
     })
 
